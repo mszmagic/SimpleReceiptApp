@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  SampleReceiptApp
+//  SimpleReceiptApp
 //
 //  Created by Shunzhe Ma on 8/11/20.
 //

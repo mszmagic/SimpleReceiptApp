@@ -13,10 +13,11 @@
 		DA0FA7D924E326B800BDC66E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0FA7D724E326B800BDC66E /* Main.storyboard */; };
 		DA0FA7DB24E326B800BDC66E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0FA7DA24E326B800BDC66E /* Assets.xcassets */; };
 		DA0FA7DE24E326B800BDC66E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0FA7DC24E326B800BDC66E /* LaunchScreen.storyboard */; };
+		DA0FA7E624E326CB00BDC66E /* HTMLhelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FA7E524E326CB00BDC66E /* HTMLhelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DA0FA7CE24E326B800BDC66E /* SampleReceiptApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleReceiptApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0FA7CE24E326B800BDC66E /* SimpleReceiptApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleReceiptApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0FA7D124E326B800BDC66E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA0FA7D324E326B800BDC66E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DA0FA7D524E326B800BDC66E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		DA0FA7DA24E326B800BDC66E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0FA7DD24E326B800BDC66E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA0FA7DF24E326B800BDC66E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA0FA7E524E326CB00BDC66E /* HTMLhelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLhelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,7 @@
 		DA0FA7C524E326B800BDC66E = {
 			isa = PBXGroup;
 			children = (
-				DA0FA7D024E326B800BDC66E /* SampleReceiptApp */,
+				DA0FA7D024E326B800BDC66E /* SimpleReceiptApp */,
 				DA0FA7CF24E326B800BDC66E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +50,32 @@
 		DA0FA7CF24E326B800BDC66E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA0FA7CE24E326B800BDC66E /* SampleReceiptApp.app */,
+				DA0FA7CE24E326B800BDC66E /* SimpleReceiptApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DA0FA7D024E326B800BDC66E /* SampleReceiptApp */ = {
+		DA0FA7D024E326B800BDC66E /* SimpleReceiptApp */ = {
 			isa = PBXGroup;
 			children = (
 				DA0FA7D124E326B800BDC66E /* AppDelegate.swift */,
 				DA0FA7D324E326B800BDC66E /* SceneDelegate.swift */,
 				DA0FA7D524E326B800BDC66E /* ViewController.swift */,
+				DA0FA7E524E326CB00BDC66E /* HTMLhelper.swift */,
 				DA0FA7D724E326B800BDC66E /* Main.storyboard */,
 				DA0FA7DA24E326B800BDC66E /* Assets.xcassets */,
 				DA0FA7DC24E326B800BDC66E /* LaunchScreen.storyboard */,
 				DA0FA7DF24E326B800BDC66E /* Info.plist */,
 			);
-			path = SampleReceiptApp;
+			path = SimpleReceiptApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA0FA7CD24E326B800BDC66E /* SampleReceiptApp */ = {
+		DA0FA7CD24E326B800BDC66E /* SimpleReceiptApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA0FA7E224E326B800BDC66E /* Build configuration list for PBXNativeTarget "SampleReceiptApp" */;
+			buildConfigurationList = DA0FA7E224E326B800BDC66E /* Build configuration list for PBXNativeTarget "SimpleReceiptApp" */;
 			buildPhases = (
 				DA0FA7CA24E326B800BDC66E /* Sources */,
 				DA0FA7CB24E326B800BDC66E /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = SampleReceiptApp;
+			name = SimpleReceiptApp;
 			productName = SampleReceiptApp;
-			productReference = DA0FA7CE24E326B800BDC66E /* SampleReceiptApp.app */;
+			productReference = DA0FA7CE24E326B800BDC66E /* SimpleReceiptApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DA0FA7C924E326B800BDC66E /* Build configuration list for PBXProject "SampleReceiptApp" */;
+			buildConfigurationList = DA0FA7C924E326B800BDC66E /* Build configuration list for PBXProject "SimpleReceiptApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA0FA7CD24E326B800BDC66E /* SampleReceiptApp */,
+				DA0FA7CD24E326B800BDC66E /* SimpleReceiptApp */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0FA7E624E326CB00BDC66E /* HTMLhelper.swift in Sources */,
 				DA0FA7D624E326B800BDC66E /* ViewController.swift in Sources */,
 				DA0FA7D224E326B800BDC66E /* AppDelegate.swift in Sources */,
 				DA0FA7D424E326B800BDC66E /* SceneDelegate.swift in Sources */,
@@ -288,12 +292,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9LFMJA3SC2;
-				INFOPLIST_FILE = SampleReceiptApp/Info.plist;
+				INFOPLIST_FILE = SimpleReceiptApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ShunzheMa.SampleReceiptApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShunzheMa.SimpleReceiptApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,12 +311,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9LFMJA3SC2;
-				INFOPLIST_FILE = SampleReceiptApp/Info.plist;
+				INFOPLIST_FILE = SimpleReceiptApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ShunzheMa.SampleReceiptApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShunzheMa.SimpleReceiptApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA0FA7C924E326B800BDC66E /* Build configuration list for PBXProject "SampleReceiptApp" */ = {
+		DA0FA7C924E326B800BDC66E /* Build configuration list for PBXProject "SimpleReceiptApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA0FA7E024E326B800BDC66E /* Debug */,
@@ -331,7 +335,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA0FA7E224E326B800BDC66E /* Build configuration list for PBXNativeTarget "SampleReceiptApp" */ = {
+		DA0FA7E224E326B800BDC66E /* Build configuration list for PBXNativeTarget "SimpleReceiptApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA0FA7E324E326B800BDC66E /* Debug */,

@@ -13,7 +13,6 @@
 		DA0FA7D924E326B800BDC66E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0FA7D724E326B800BDC66E /* Main.storyboard */; };
 		DA0FA7DB24E326B800BDC66E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0FA7DA24E326B800BDC66E /* Assets.xcassets */; };
 		DA0FA7DE24E326B800BDC66E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0FA7DC24E326B800BDC66E /* LaunchScreen.storyboard */; };
-		DA0FA7E624E326CB00BDC66E /* HTMLhelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0FA7E524E326CB00BDC66E /* HTMLhelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		DA0FA7DA24E326B800BDC66E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0FA7DD24E326B800BDC66E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA0FA7DF24E326B800BDC66E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA0FA7E524E326CB00BDC66E /* HTMLhelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLhelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 				DA0FA7D124E326B800BDC66E /* AppDelegate.swift */,
 				DA0FA7D324E326B800BDC66E /* SceneDelegate.swift */,
 				DA0FA7D524E326B800BDC66E /* ViewController.swift */,
-				DA0FA7E524E326CB00BDC66E /* HTMLhelper.swift */,
 				DA0FA7D724E326B800BDC66E /* Main.storyboard */,
 				DA0FA7DA24E326B800BDC66E /* Assets.xcassets */,
 				DA0FA7DC24E326B800BDC66E /* LaunchScreen.storyboard */,
@@ -140,7 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA0FA7E624E326CB00BDC66E /* HTMLhelper.swift in Sources */,
 				DA0FA7D624E326B800BDC66E /* ViewController.swift in Sources */,
 				DA0FA7D224E326B800BDC66E /* AppDelegate.swift in Sources */,
 				DA0FA7D424E326B800BDC66E /* SceneDelegate.swift in Sources */,

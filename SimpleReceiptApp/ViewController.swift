@@ -62,72 +62,8 @@ class ViewController: UITableViewController {
      レシートを印刷するアクション
      */
     @IBAction func actionPrint(){
-        var htmlString = ""
-        // HTMLのヘッダーを取得する
-        let htmlHeader = headerHTMLstring()
-        htmlString.append(htmlHeader)
-        // 行を取得する
-        var totalPrice = 0
-        for item in items {
-            let name = item.name
-            let price = item.price
-            let rowString = getSingleRow(itemName: name, itemPrice: price)
-            htmlString.append(rowString)
-            totalPrice += price
-        }
-        // 合計金額を追加する
-        htmlString.append("\n 合計金額: \(totalPrice) yen \n")
-        // フッターを取得する
-        let footerString = footerHTMLstring()
-        htmlString.append(footerString)
-        //HTML -> PDF
-        let pdfData = getPDF(fromHTML: htmlString)
-        //PDFデータを一時ディレクトリに保存する
-        if let savedPath = saveToTempDirectory(data: pdfData) {
-            //PDFファイルを表示する
-            self.PDFpath = savedPath
-            let previewController = QLPreviewController()
-            previewController.dataSource = self
-            present(previewController, animated: true, completion: nil)
-        }
+        // TODO
     }
-    
-    /*
-     この関数はHTML文字列を受け取り、PDFファイルを表す `NSData` オブジェクトを返します。
-     */
-    func getPDF(fromHTML: String) -> NSData {
-        let renderer = UIPrintPageRenderer()
-        let paperSize = CGSize(width: 595.2, height: 841.8) //B6
-        let paperFrame = CGRect(origin: .zero, size: paperSize)
-        renderer.setValue(paperFrame, forKey: "paperRect")
-        renderer.setValue(paperFrame, forKey: "printableRect")
-        let formatter = UIMarkupTextPrintFormatter(markupText: fromHTML)
-        renderer.addPrintFormatter(formatter, startingAtPageAt: 0)
-        let pdfData = NSMutableData()
-        UIGraphicsBeginPDFContextToData(pdfData, .zero, [:])
-        for pageI in 0..<renderer.numberOfPages {
-            UIGraphicsBeginPDFPage()
-            renderer.drawPage(at: pageI, in: UIGraphicsGetPDFContextBounds())
-        }
-        UIGraphicsEndPDFContext()
-        return pdfData
-    }
-    
-    /*
-     この関数は、特定の `data` をアプリの一時ストレージに保存します。さらに、そのファイルが存在する場所のパスを返します。
-     */
-    func saveToTempDirectory(data: NSData) -> URL? {
-        let tempDirectory = NSURL.fileURL(withPath: NSTemporaryDirectory(), isDirectory: true)
-        let filePath = tempDirectory.appendingPathComponent("receipt-" + UUID().uuidString + ".pdf")
-        do {
-            try data.write(to: filePath)
-            return filePath
-        } catch {
-            print(error.localizedDescription)
-            return nil
-        }
-    }
-
 
 }
 
@@ -156,29 +92,6 @@ extension ViewController {
         let rowI = indexPath.row
         items.remove(at: rowI)
         tableView.reloadData()
-    }
-    
-}
-
-/*
- `QLPreviewController` にPDFデータを提供する
- */
-
-extension ViewController: QLPreviewControllerDataSource {
-    
-    func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
-        if self.PDFpath != nil {
-            return 1
-        } else {
-            return 0
-        }
-    }
-    
-    func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
-        guard let pdfFilePath = self.PDFpath else {
-            return "" as! QLPreviewItem
-        }
-        return pdfFilePath as QLPreviewItem
     }
     
 }
